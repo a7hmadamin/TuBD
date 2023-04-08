@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="styles/flexbox-center-container.css"
+      media="all"
+    />
+    <link rel="stylesheet" href="styles/system-fonts.css" media="all" />
+    <link rel="stylesheet" href="styles/style.css" media="all" />
+  </head>
+
+  <body>
+    <canvas id="c"></canvas>
+    <canvas id="confetti"></canvas>
+    <div class="container m-auto py-3 text-center" id="count">
+      <h1 id="head">Countdown to your birthday:</h1>
+      <ul>
+        <li><span id="day"></span>days</li>
+        <li><span id="hour"></span>hours</li>
+        <li><span id="minute"></span>minutes</li>
+        <li><span id="second"></span>seconds</li>
+      </ul>
+    </div>
+    <div id="merrywrap" class="merrywrap">
+      <canvas id="snowfall"> </canvas>
+      <div class="giftbox">
+        <div class="cover">
+          <div></div>
+        </div>
+        <div class="box"></div>
+      </div>
+    </div>
+    <div class="stage m-auto" id="stage">
+      <div class="container my-5 p-5" id="images">
+        <h2 class="txt-memories py-5">
+          - All the memories we've had so far have been bliss and there're many
+          more to come
+        </h2>
+        <div class="row g-5 align-content-center" id="imgs">
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/00.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/1.jpg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/2.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/3.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/4.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/5.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/6.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/7.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/8.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/9.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/10.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/11.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/12.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/13.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/14.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/15.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/16.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/17.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/18.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/19.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/20.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/21.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/22.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/23.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/24.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/25.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/26.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/27.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/28.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/29.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/30.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/31.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/32.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/33.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/34.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/35.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/36.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/37.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/38.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/39.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/40.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/41.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/42.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/43.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/44.jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (1).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (2).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (3).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (4).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (5).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (6).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (7).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (8).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (9).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (10).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (11).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (12).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (13).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (14).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (15).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (16).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (17).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (18).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/45 (19).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/46 (1).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/46 (2).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/46 (3).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/46 (4).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/46 (5).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/46 (6).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/46 (7).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/46 (8).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/46 (9).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/46 (10).jpeg" class="img-fluid" />
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="Images/46 (11).jpeg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/confetti.min.js" charset="utf-8"></script>
+  <script src="scripts/index.js" charset="utf-8"></script>
+</html>
